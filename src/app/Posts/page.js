@@ -1,53 +1,82 @@
-// src/app/page.js
-import Card from "@/components/Card";
+"use client";
+import { useState } from "react";
+import Head from "next/head";
+import Image from "next/image";
 
-export default function HomePage() {
+const Card = ({ title, content, imageUrl, onClick }) => (
+  <article
+    className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg"
+    onClick={onClick}
+  >
+    <Image
+      alt=""
+      src={imageUrl}
+      layout="fill"
+      objectFit="cover"
+      className="absolute inset-0 h-full w-full object-cover"
+    />
+
+    <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+      <div className="p-4 sm:p-6">
+        <h3 className="mt-0.5 text-lg text-white">{title}</h3>
+
+        <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+          {content}
+        </p>
+      </div>
+    </div>
+  </article>
+);
+
+const PopUp = ({ content, onClose }) => (
+  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+      <h2 className="text-2xl font-bold mb-4">Pop Up</h2>
+      <p className="mb-4">{content}</p>
+      <button
+        className="bg-blue-500 text-white px-4 py-2 rounded"
+        onClick={onClose}
+      >
+        Close
+      </button>
+    </div>
+  </div>
+);
+
+export default function About() {
+  const [popUpContent, setPopUpContent] = useState(null);
+
   const cards = [
     {
       id: 1,
       title: "Post 1",
       content:
-        "lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus dhgahehbfheahvcvejvfjvjbeahfefwfbwbfbyvuw",
-      imageUrl: "/juara.png",
+        "Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+      imageUrl: "/blog1.jpg",
     },
     {
       id: 2,
       title: "Post 2",
       content:
-        "This is the second card absolute inset-0 h-full w-full object-cover lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus dhgahehbfheahvcvejvfjvjbeahfefwfbwbfbyvuw",
-      imageUrl: "/blog1.jpg",
+        "oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+      imageUrl: "/juara2.jpg",
     },
     {
       id: 3,
       title: "Post 3",
       content:
-        "lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus dhgahehbfheahvcvejvfjvjbeahfefwfbwbfbyvuw.",
-      imageUrl: "/juara2.jpg",
+        "Siap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+      imageUrl: "/juara3.jpg",
     },
-    {
-      id: 4,
-      title: "Post 4",
-      content:
-        "lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus dhgahehbfheahvcvejvfjvjbeahfefwfbwbfbyvuw",
-      imageUrl:
-        "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/432540512_1995621987506722_7805268495414454534_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDI1NjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=07BaIWa8jcUQ7kNvgHFulQ5&edm=AGFyKLkBAAAA&ccb=7-5&ig_cache_key=MzMyMTg2NzM3OTgyMTgyMzQ5OQ%3D%3D.2-ccb7-5&oh=00_AYB9vbf4fuEdhfttpeLPMsYH-J5EZsldRJ4Xx7p84JVi8g&oe=66A5150B&_nc_sid=5a0a6d",
-    },
-    {
-      id: 5,
-      title: "Post 5",
-      content:
-        "This is the second card absolute inset-0 h-full w-full object-cover lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus dhgahehbfheahvcvejvfjvjbeahfefwfbwbfbyvuw",
-      imageUrl: "/blog1.jpg",
-    },
-    {
-      id: 6,
-      title: "Post 6",
-      content:
-        "lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus dhgahehbfheahvcvejvfjvjbeahfefwfbwbfbyvuw.",
-      imageUrl: "/blog2.jpg",
-    },
-    // Tambahkan lebih banyak kartu jika diperlukan
   ];
+
+  const handleCardClick = (content) => {
+    setPopUpContent(content);
+  };
+
+  const handleClosePopUp = () => {
+    setPopUpContent(null);
+  };
 
   return (
     <div>
@@ -56,11 +85,11 @@ export default function HomePage() {
           <div className="sm:flex sm:items-center sm:justify-between">
             <div className="text-center sm:text-left">
               <h1 className="text-2xl font-bold text-white sm:text-3xl">
-                Blog
+                Blog KELFAST FC
               </h1>
 
               <p className="mt-1.5 text-sm text-white">
-                Berita tentang kelfast fc
+                Monggo silakan di pesan official merchandise kelfast
               </p>
             </div>
 
@@ -91,12 +120,13 @@ export default function HomePage() {
                 className="block rounded-lg bg-white px-5 py-3 text-sm font-medium border-yellow-500 text-blue-dark transition hover:bg-blue-dark  hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
                 type="button"
               >
-                SHOP NOW
+                Shop Now
               </button>
             </div>
           </div>
         </div>
       </header>
+
       <div className="p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
           {cards.map((card) => (
@@ -105,10 +135,15 @@ export default function HomePage() {
               title={card.title}
               content={card.content}
               imageUrl={card.imageUrl}
+              onClick={() => handleCardClick(card.content)}
             />
           ))}
         </div>
       </div>
+
+      {popUpContent && (
+        <PopUp content={popUpContent} onClose={handleClosePopUp} />
+      )}
     </div>
   );
 }

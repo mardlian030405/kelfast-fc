@@ -15,6 +15,11 @@ const BlogCard = ({ title, description, imageUrl, date }) => {
           {date}
         </span>
       </div>
+      <a href="/Posts" className="group relative block">
+        <button className="block w-full rounded bg-white p-4 text-sm font-medium tracking-wide transition hover:scale-105">
+          View All
+        </button>
+      </a>
     </div>
   );
 };

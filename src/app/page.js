@@ -12,17 +12,14 @@ const videos = [
   {
     videoUrl: "https://www.instagram.com/reel/C59wqZYPATc/embed",
     title: "Cuplikan Kelfast di Respati CUP",
-    description: "Kelfast meraih juara 2",
   },
   {
     videoUrl: "https://www.instagram.com/reel/Cy5wcemvYjN/embed",
     title: "Cuplikan Kelfast U16 Rosalia CUP",
-    description: "Kelfast U16 meraih juara 1",
   },
   {
-    videoUrl: "https://www.instagram.com/reel/CqXzRSAjag5/embed",
-    title: "Cuplikan Kelfast U20 Ramadhan CUP",
-    description: "Group Stage kelfast meraih 3 point",
+    videoUrl: "https://www.instagram.com/reel/C6fLXdIP9e4/embed",
+    title: "Cuplikan Kelfast on training routine",
   },
 ];
 
@@ -99,7 +96,7 @@ const Page = () => {
       </section>
       <div className="bg-blue-light min-h-auto p-8 flex flex-col items-center">
         <h1 className="text-4xl font-bold text-white mb-8">VIDEO</h1>
-        <div className="grid grid-cols-3 max-sm:grid-cols-1 justify-center items-center">
+        <div className="grid grid-cols-3 max-md:grid-cols-1 max-sm:grid-cols-1 justify-center items-center">
           {videos.map((video, index) => (
             <VideoCard key={index} {...video} />
           ))}
@@ -107,7 +104,7 @@ const Page = () => {
       </div>
       <div className=" bg-blue-light min-h-auto p-8 flex flex-col items-center">
         <h1 className="text-4xl text-white font-bold mb-8">Blog Posts</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-5 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 pt-5 gap-8">
           {blogPosts.map((post, index) => (
             <BlogCard
               key={index}

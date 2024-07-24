@@ -69,7 +69,7 @@ const Navbar = () => {
             <div className="sm:flex sm:gap-4">
               <a
                 href="/Shop"
-                className="container inline-flex items-center justify-center gap-1.5 rounded-lg bg-white hover:bg-blue-dark px-3 py-2 text-blue-dark transition hover:text-white focus:outline-none focus:ring"
+                className="container inline-flex items-center justify-center gap-1.5 rounded-lg bg-white hover:bg-blue-dark px-3 py-2 text-blue-dark transition hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
                 type="button"
                 style={{ fontSize: "0.875rem" }} // Penyesuaian ukuran font
               >
