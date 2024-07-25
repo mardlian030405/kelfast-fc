@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Head from "next/head";
 import Image from "next/image";
+import Head from "next/head";
 
 const Card = ({ title, content, imageUrl, onClick }) => (
   <article
@@ -28,10 +28,19 @@ const Card = ({ title, content, imageUrl, onClick }) => (
   </article>
 );
 
-const PopUp = ({ content, onClose }) => (
-  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-      <h2 className="text-2xl font-bold mb-4">Pop Up</h2>
+const PopUp = ({ title, content, imageUrl, onClose }) => (
+  <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+      <div className="relative w-full h-96 mb-4">
+        <Image
+          src={imageUrl}
+          alt={title}
+          objectFit="cover"
+          layout="fill"
+          className="rounded-t-lg absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
+      <h2 className="text-xl mb-4">{title}</h2>
       <p className="mb-4">{content}</p>
       <button
         className="bg-blue-500 text-white px-4 py-2 rounded"
@@ -51,7 +60,7 @@ export default function About() {
       id: 1,
       title: "Post 1",
       content:
-        "Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+        "Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy Hari ini Kelfast FC U-16 turut serta dalam kompetisi futsal se-Karesidenan Kediri.Rosalia Futsal Championship U-23.Bertanding dan Belajar!.Mohon do'a dan dukungan Kelfans! semua ya Kelfast Jaya! Jaya! Jaya! oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
       imageUrl: "/blog1.jpg",
     },
     {
@@ -68,10 +77,38 @@ export default function About() {
         "Siap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
       imageUrl: "/juara3.jpg",
     },
+    {
+      id: 4,
+      title: "Post 2",
+      content:
+        "oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+      imageUrl: "/juara2.jpg",
+    },
+    {
+      id: 5,
+      title: "Post 3",
+      content:
+        "Siap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+      imageUrl: "/juara3.jpg",
+    },
+    {
+      id: 6,
+      title: "Post 2",
+      content:
+        "oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+      imageUrl: "/juara2.jpg",
+    },
+    {
+      id: 7,
+      title: "Post 3",
+      content:
+        "Siap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+      imageUrl: "/juara3.jpg",
+    },
   ];
 
-  const handleCardClick = (content) => {
-    setPopUpContent(content);
+  const handleCardClick = (card) => {
+    setPopUpContent(card);
   };
 
   const handleClosePopUp = () => {
@@ -135,14 +172,19 @@ export default function About() {
               title={card.title}
               content={card.content}
               imageUrl={card.imageUrl}
-              onClick={() => handleCardClick(card.content)}
+              onClick={() => handleCardClick(card)}
             />
           ))}
         </div>
       </div>
 
       {popUpContent && (
-        <PopUp content={popUpContent} onClose={handleClosePopUp} />
+        <PopUp
+          title={popUpContent.title}
+          content={popUpContent.content}
+          imageUrl={popUpContent.imageUrl}
+          onClose={handleClosePopUp}
+        />
       )}
     </div>
   );
