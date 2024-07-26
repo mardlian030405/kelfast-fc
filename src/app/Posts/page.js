@@ -20,7 +20,7 @@ const Card = ({ title, content, imageUrl, onClick }) => (
       <div className="p-4 sm:p-6">
         <h3 className="mt-0.5 text-lg text-white">{title}</h3>
 
-        <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+        <p className="mt-2 line-clamp-3 text-justify text-sm/relaxed text-white/95">
           {content}
         </p>
       </div>
@@ -29,21 +29,21 @@ const Card = ({ title, content, imageUrl, onClick }) => (
 );
 
 const PopUp = ({ title, content, imageUrl, onClose }) => (
-  <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+  <div className="fixed top-0 mx-10 left-0 flex items-center justify-center z-50">
     <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-      <div className="relative w-full h-96 mb-4">
+      <div className="relative w-96 h-64 mb-4">
         <Image
           src={imageUrl}
           alt={title}
-          objectFit="cover"
           layout="fill"
-          className="rounded-t-lg absolute inset-0 h-full w-full object-cover"
+          objectFit="cover"
+          className="rounded-t-lg relative inset-0"
         />
       </div>
-      <h2 className="text-xl mb-4">{title}</h2>
-      <p className="mb-4">{content}</p>
+      <h2 className="text-xl text-start mb-4">{title}</h2>
+      <p className="mb-4 text-justify">{content}</p>
       <button
-        className="bg-blue-500 text-white px-4 py-2 rounded"
+        className="bg-blue-500 max-sm:text-sm text-white px-4 py-2 rounded"
         onClick={onClose}
       >
         Close

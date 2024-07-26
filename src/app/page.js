@@ -132,14 +132,6 @@ const Page = () => {
                   src={juara}
                   className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
                 />
-
-                <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                  <h3 className="text-xl font-medium text-white">Kelfast</h3>
-
-                  <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                    View all
-                  </span>
-                </div>
               </a>
             </li>
 
@@ -150,14 +142,6 @@ const Page = () => {
                   src={blog1}
                   className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
                 />
-
-                <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                  <h3 className="text-xl font-medium text-white">kelfast</h3>
-
-                  <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                    View all
-                  </span>
-                </div>
               </a>
             </li>
 
@@ -168,14 +152,6 @@ const Page = () => {
                   src={blog2}
                   className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
                 />
-
-                <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-                  <h3 className="text-xl font-medium text-white">kelfast</h3>
-
-                  <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-                    View all
-                  </span>
-                </div>
               </a>
             </li>
           </ul>

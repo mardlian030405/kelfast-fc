@@ -45,7 +45,7 @@ const About = () => {
           <h1 className="text-6xl max-sm:text-4xl font-bold">KELFAST FC</h1>
 
           <div className="my-6 text-center text-white max-w-2xl">
-            <p className="my-4">
+            <p className="my-4 text-justify">
               Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan
               antara kesiapan dan kesempatan akan selalu berusaha keras
               mempersiapkan dan memanfaatkan kesempatan. Bermula dari
@@ -54,7 +54,7 @@ const About = () => {
               emotional bounding dan memanfaatkan setiap kesempatan dengan terus
               konsisten melakukan uji tanding dan berkiprah dalam kompetisi
             </p>
-            <p className="my-4">
+            <p className="my-4 text-justify">
               Berawal dari awal tahun 2022 berkumpul karyawan-karyawan Sampeyan
               Group yang menyukai olahraga futsal bermain fun futsal bersama.
               Akhir tahun 2022 manajemen Sampeyan Group menginisiasi pembentukan
@@ -67,7 +67,7 @@ const About = () => {
               (2023) Kelfast memiliki tim aktif kelompok usia U23, U19, U16
               serta kegiatan fun futsal U40
             </p>
-            <p className="my-4">
+            <p className="my-4 text-justify">
               Sampeyan Group mendukung penuh kegiatan Kelfast FC dari mulai
               latihan rutin, uji tanding, dan keikutsertaan dalam berbagai
               kompetisi. Bertujuan membangun keluarga dan tim yang selalu siap
@@ -77,7 +77,7 @@ const About = () => {
               menemukan dan mengasah bakat-bakat dari anak-anak muda yang belum
               tersalurkan.
             </p>
-            <p className="my-4">
+            <p className="my-4 text-justify">
               Besar harapan ke depannya banyak pihak yang memberi dukungan untuk
               Kelfast FC baik dari segi sponsorship, materi kepelatihan, dan
               penyaluran pemain-pemain ke tingkat kompetisi yang lebih tinggi.
