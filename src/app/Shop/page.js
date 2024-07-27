@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import store from "/public/store.png";
+import { useState } from "react";
 
 const Shop = () => {
   const handleAddToCart = () => {
@@ -13,6 +14,18 @@ const Shop = () => {
     )}`;
     window.open(whatsappUrl, "_blank");
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const phoneNumber = "6285791635708"; // Ganti dengan nomor WhatsApp tujuan
+    const formattedMessage = `Nama saya ${name}%0A%0APesan: ${message}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${formattedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <div>
       <header className="bg-blue-dark pt-20">
@@ -278,6 +291,48 @@ const Shop = () => {
           </ul>
         </div>
       </section>
+      <div className="max-w-md mx-auto bg-white p-6 rounded shadow-md">
+        <h2 className="text-2xl font-bold mb-4">Send a Message</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="name"
+            >
+              Nama
+            </label>
+            <input
+              id="name"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="message"
+            >
+              Pesan atau pertanyaan
+            </label>
+            <textarea
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="bg-green-500 text-white font-bold py-2 px-4 rounded"
+          >
+            Send via WhatsApp
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

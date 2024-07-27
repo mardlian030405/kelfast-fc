@@ -44,7 +44,7 @@ const About = () => {
         <main className="flex flex-col items-center justify-center w-full flex-1 text-center py-5 text-white">
           <h1 className="text-6xl max-sm:text-4xl font-bold">KELFAST FC</h1>
 
-          <div className="my-6 text-center text-white max-w-2xl">
+          <div className="my-6 text-center max-sm:mx-4 text-white max-w-2xl">
             <p className="my-4 text-justify">
               Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan
               antara kesiapan dan kesempatan akan selalu berusaha keras
