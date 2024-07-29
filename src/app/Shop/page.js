@@ -291,8 +291,8 @@ const Shop = () => {
           </ul>
         </div>
       </section>
-      <div className="max-w-md mx-auto bg-white p-6 rounded shadow-md">
-        <h2 className="text-2xl font-bold mb-4">Send a Message</h2>
+      <div className="max-w-md mx-auto bg-white p-6 rounded shadow-xl">
+        <h2 className="text-2xl text-center font-bold mb-4">Send message</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label
@@ -325,12 +325,14 @@ const Shop = () => {
               required
             ></textarea>
           </div>
-          <button
-            type="submit"
-            className="bg-green-500 text-white font-bold py-2 px-4 rounded"
-          >
-            Send via WhatsApp
-          </button>
+          <div className="flex justify-center w-full">
+            <button
+              type="submit"
+              className="bg-green-500 text-white font-bold py-2 px-4 rounded"
+            >
+              Send via WhatsApp
+            </button>
+          </div>
         </form>
       </div>
     </div>

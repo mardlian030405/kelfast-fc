@@ -31,7 +31,7 @@ const Card = ({ title, content, imageUrl, onClick }) => (
 const PopUp = ({ title, content, imageUrl, onClose }) => (
   <div className="fixed top-0 mx-10 inset-0 flex items-center justify-center z-50">
     <div className="bg-white p-6 rounded-lg shadow-lg text-center ">
-      <h2 className="text-xl text-start mb-4">{title}</h2>
+      <h2 className="text-xl font-bold text-start mb-4">{title}</h2>
       <div className="flex flex-col md:flex-row">
         <div className="relative md:w-10/12 md:h-80 w-96 h-64 mb-4">
           <Image
@@ -44,6 +44,7 @@ const PopUp = ({ title, content, imageUrl, onClose }) => (
         </div>
         <p className="mb-4 mx-4 text-justify">{content}</p>
       </div>
+
       <button
         className="bg-blue-500 max-sm:text-sm text-white px-4 py-2 rounded"
         onClick={onClose}
@@ -60,9 +61,9 @@ export default function About() {
   const cards = [
     {
       id: 1,
-      title: "Post 1",
+      title: "Coaching clinic kelfast fc",
       content:
-        "Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy Hari ini Kelfast FC U-16 turut serta dalam kompetisi futsal se-Karesidenan Kediri.Rosalia Futsal Championship U-23.Bertanding dan Belajar!.Mohon do'a dan dukungan Kelfans! semua ya Kelfast Jaya! Jaya! Jaya! oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+        "Coaching clinic oleh dean gustian kelfast fc untuk meningkatkan kualitas permainan saat mengarungi tournament futsal yang akan datang serta mendapatkan motivasi oleh coach dean",
       imageUrl: "/blog1.jpg",
     },
     {

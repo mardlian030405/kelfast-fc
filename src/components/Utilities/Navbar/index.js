@@ -130,7 +130,7 @@ const Navbar = () => {
                     href="/About"
                   >
                     {" "}
-                    ABOUT{" "}
+                    About{" "}
                   </a>
                 </li>
                 <li>
@@ -139,7 +139,7 @@ const Navbar = () => {
                     href="/Squad"
                   >
                     {" "}
-                    TIM{" "}
+                    Squad{" "}
                   </a>
                 </li>
                 <li>
@@ -148,7 +148,7 @@ const Navbar = () => {
                     href="/Shop"
                   >
                     {" "}
-                    STORE{" "}
+                    Store{" "}
                   </a>
                 </li>
                 <li>
@@ -157,7 +157,7 @@ const Navbar = () => {
                     href="/Posts"
                   >
                     {" "}
-                    BLOG{" "}
+                    Blog{" "}
                   </a>
                 </li>
               </ul>

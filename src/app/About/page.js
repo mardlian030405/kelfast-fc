@@ -20,7 +20,7 @@ const About = () => {
 
             <div className="lg:py-24 max-sm:pt-10 max-sm:text-center">
               <h1 className="text-2xl font-extrabold sm:text-4xl text-white">
-                PROFESSIONAL FUTSAL TEAM
+                ACADEMY FUTSAL TEAM
               </h1>
               <h2 className="font-extrabold max-sm:text-center text-3xl sm:text-4xl text-yellow-400 sm:block">
                 KELFAST FC

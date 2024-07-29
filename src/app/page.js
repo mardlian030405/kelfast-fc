@@ -14,8 +14,8 @@ const videos = [
     title: "Cuplikan Kelfast di Respati CUP",
   },
   {
-    videoUrl: "https://www.instagram.com/reel/Cy5wcemvYjN/embed",
-    title: "Cuplikan Kelfast U16 Rosalia CUP",
+    videoUrl: "https://www.instagram.com/reel/C1ZShrsvUpG/embed",
+    title: "Cuplikan Seleksi pemain Kelfast U13",
   },
   {
     videoUrl: "https://www.instagram.com/reel/C6fLXdIP9e4/embed",
@@ -63,7 +63,7 @@ const Page = () => {
 
             <div className="lg:py-24 max-sm:pt-10 max-sm:text-center">
               <h1 className="text-2xl font-extrabold sm:text-4xl text-white">
-                PROFESSIONAL FUTSAL TEAM
+                ACADEMY FUTSAL TEAM
               </h1>
               <h2 className="font-extrabold max-sm:text-center text-3xl sm:text-4xl text-yellow-400 sm:block">
                 KELFAST FC

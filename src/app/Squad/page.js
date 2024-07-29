@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import logo from "/public/logo.png";
 
 const Squad = () => {
   return (
@@ -16,7 +18,7 @@ const Squad = () => {
               </p>
             </div>
 
-            <div className="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
+            <div className="mt-4 flex flex-col gap-8 sm:mt-0 sm:flex-row sm:items-center">
               <button
                 className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-5 py-3 text-gray-500 transition hover:text-gray-700 focus:outline-none focus:ring"
                 type="button"
@@ -38,12 +40,25 @@ const Squad = () => {
                   />
                 </svg>
               </button>
-
               <button
-                className="block rounded-lg bg-white px-5 py-3 text-sm font-medium border-yellow-500 text-blue-dark transition hover:bg-blue-dark  hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
+                className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-5 py-3 text-gray-500 transition hover:text-gray-700 focus:outline-none focus:ring"
                 type="button"
               >
-                SHOP NOW
+                <span className="text-sm font-medium"> Shop now</span>
+
+                <svg
+                  className="h-4 w-4 text-blue-dark hover:text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -75,9 +90,9 @@ const Squad = () => {
               <ul className="grid grid-cols-2 gap-4">
                 <li>
                   <a className="group relative block bg-black">
-                    <img
+                    <Image
                       alt=""
-                      src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                      src={logo}
                       className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
 
@@ -99,9 +114,9 @@ const Squad = () => {
 
                 <li>
                   <a className="group relative block bg-black">
-                    <img
+                    <Image
                       alt=""
-                      src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                      src={logo}
                       className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
 
@@ -154,9 +169,9 @@ const Squad = () => {
               <ul className="grid grid-cols-2 gap-4">
                 <li>
                   <a className="group relative block bg-black">
-                    <img
+                    <Image
                       alt=""
-                      src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                      src={logo}
                       className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
 
@@ -178,9 +193,9 @@ const Squad = () => {
 
                 <li>
                   <a className="group relative block bg-black">
-                    <img
+                    <Image
                       alt=""
-                      src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                      src={logo}
                       className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
 
@@ -230,9 +245,9 @@ const Squad = () => {
               <ul className="grid grid-cols-2 gap-4">
                 <li>
                   <a className="group relative block bg-black">
-                    <img
+                    <Image
                       alt=""
-                      src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                      src={logo}
                       className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
 
@@ -254,9 +269,9 @@ const Squad = () => {
 
                 <li>
                   <a className="group relative block bg-black">
-                    <img
+                    <Image
                       alt=""
-                      src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                      src={logo}
                       className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
 
@@ -306,9 +321,9 @@ const Squad = () => {
               <ul className="grid grid-cols-2 gap-4">
                 <li>
                   <a className="group relative block bg-black">
-                    <img
+                    <Image
                       alt=""
-                      src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                      src={logo}
                       className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
 
@@ -330,9 +345,9 @@ const Squad = () => {
 
                 <li>
                   <a className="group relative block bg-black">
-                    <img
+                    <Image
                       alt=""
-                      src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                      src={logo}
                       className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                     />
 

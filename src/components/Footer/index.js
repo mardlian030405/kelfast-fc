@@ -149,7 +149,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/kelfast.fc/#"
                     rel="noreferrer"
                     target="_blank"
                     className="text-white transition hover:text-teal-700/75"
@@ -191,12 +191,12 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="#"
+                    href="https://www.tiktok.com/@kelfastfc"
                     rel="noreferrer"
                     target="_blank"
                     className="text-white transition hover:text-teal-700/75"
                   >
-                    <span className="sr-only">GitHub</span>
+                    <span className="sr-only">Tiktok</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6"
@@ -215,7 +215,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-white transition hover:text-teal-700/75"
                   >
-                    <span className="sr-only">GitHub</span>
+                    <span className="sr-only">Youtube</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6"

@@ -86,6 +86,7 @@ const Sponsor = () => {
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>
+
               <div className="flex flex-col rounded-lg bg-white px-4 py-8 items-center">
                 <a
                   href="https://www.instagram.com/jetmaticshop/#"
