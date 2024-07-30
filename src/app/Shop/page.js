@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import store from "/public/store.png";
+import logo from "/public/logo.png";
 import { useState } from "react";
 
 const Shop = () => {
@@ -28,52 +29,40 @@ const Shop = () => {
 
   return (
     <div>
-      <header className="bg-blue-dark pt-20">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <div className="text-center sm:text-left">
-              <h1 className="text-2xl font-bold text-white sm:text-3xl">
-                OFFICIAL MERCHANDISE KELFAST FC
-              </h1>
-
-              <p className="mt-1.5 text-sm text-white">
-                Monggo silakan di pesan official merchandise kelfast
-              </p>
+      <section className="bg-blue-dark">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div className="relative max-md:hidden h-auto overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+              <Image
+                className="absolute inset-0 h-full w-full object-cover"
+                src={logo}
+                alt={`logo`}
+                style={{ width: "100%", height: "100%" }}
+              />
             </div>
 
-            <div className="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-              <button
-                className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-5 py-3 text-gray-500 transition hover:text-gray-700 focus:outline-none focus:ring"
-                type="button"
-              >
-                <span className="text-sm font-medium"> View Website </span>
+            <div className="lg:py-24 max-sm:pt-10 max-sm:text-center">
+              <h1 className="text-2xl font-extrabold sm:text-4xl text-white">
+                OFFICIAL MERCHANDISE
+              </h1>
+              <h2 className="font-extrabold max-sm:text-center text-3xl sm:text-4xl text-yellow-400 sm:block">
+                KELFAST FC
+              </h2>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </button>
+              <p className="mt-4 sm:text-2xl max-sm:text-center text-lg text-white">
+                OFFICIAL PARTNERS SAMPEYAN GROUP
+              </p>
 
-              <button
-                className="block rounded-lg bg-white px-5 py-3 text-sm font-medium border-yellow-500 text-blue-dark transition hover:bg-blue-dark  hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
-                type="button"
+              <a
+                href=""
+                className="mt-8 inline-block rounded bg-white px-12 py-3 text-sm font-medium text-green-800 transition hover:bg-blue-dark hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
               >
-                Shop Now
-              </button>
+                SHOP NOW
+              </a>
             </div>
           </div>
         </div>
-      </header>
+      </section>
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Head from "next/head";
+import VideoCard from "../../components/VideoCard";
 
 const Card = ({ title, content, imageUrl, onClick }) => (
   <article
@@ -31,9 +31,9 @@ const Card = ({ title, content, imageUrl, onClick }) => (
 const PopUp = ({ title, content, imageUrl, onClose }) => (
   <div className="fixed top-0 mx-10 inset-0 flex items-center justify-center z-50">
     <div className="bg-white p-6 rounded-lg shadow-lg text-center ">
-      <h2 className="text-xl font-bold text-start mb-4">{title}</h2>
+      <h2 className="text-xl ml-4 font-bold text-start mb-4">{title}</h2>
       <div className="flex flex-col md:flex-row">
-        <div className="relative md:w-10/12 md:h-80 w-96 h-64 mb-4">
+        <div className="relative md:w-10/12 md:h-96 w-96 h-64 mb-4">
           <Image
             src={imageUrl}
             alt={title}
@@ -68,31 +68,35 @@ export default function About() {
     },
     {
       id: 2,
-      title: "Post 2",
+      title: "Seleksi Kelfast U-13",
       content:
         "oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
-      imageUrl: "/juara2.jpg",
+      imageUrl:
+        "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/410309492_3500007626905139_1186460993421857155_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDI0eDE4MjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=BjHaOtdbWGUQ7kNvgEw4k7j&gid=88ebef6cec6b4108bc607b3db2b2abc0&edm=AGFyKLkBAAAA&ccb=7-5&ig_cache_key=MzI1ODAwNDQ3MzExNjU5MDkzOA%3D%3D.2-ccb7-5&oh=00_AYAWFM4cTWRLu-SQitNKoR5MEo5QdG4xVq5ErYVVAHCgIA&oe=66AE0D19&_nc_sid=5a0a6d",
     },
     {
       id: 3,
       title: "Post 3",
       content:
         "Siap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
-      imageUrl: "/juara3.jpg",
+      imageUrl:
+        "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/432492162_924844449354546_3029459472931812545_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDI1NjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=DOULokZAAXEQ7kNvgHtAmLd&gid=88ebef6cec6b4108bc607b3db2b2abc0&edm=AGFyKLkBAAAA&ccb=7-5&ig_cache_key=MzMyMTg0ODUwMjQwODkxNDQ5MQ%3D%3D.2-ccb7-5&oh=00_AYAxdUTJHnenjLe_ziE5YYqWTKceYKCX3zyuzTHtGtOG4Q&oe=66AE05D4&_nc_sid=5a0a6d",
     },
     {
       id: 4,
       title: "Post 2",
       content:
         "oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
-      imageUrl: "/juara2.jpg",
+      imageUrl:
+        "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/432540512_1995621987506722_7805268495414454534_n.jpg?stp=dst-jpg_e35_p480x480&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDI1NjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=LBJjYzV1UkAQ7kNvgF7nnTP&gid=88ebef6cec6b4108bc607b3db2b2abc0&edm=AGFyKLkBAAAA&ccb=7-5&ig_cache_key=MzMyMTg2NzM3OTgyMTgyMzQ5OQ%3D%3D.2-ccb7-5&oh=00_AYATfj9cFxSRp_A4Vdzq3S49iqaSAoZgKf-LwbKfq5bDCA&oe=66AE174B&_nc_sid=5a0a6d",
     },
     {
       id: 5,
       title: "Post 3",
       content:
         "Siap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
-      imageUrl: "/juara3.jpg",
+      imageUrl:
+        "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/432438225_908306984355984_1298487451995429155_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDI1NjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=YqWUg8bKMaQQ7kNvgFDZ7Qy&edm=ADDLYBMBAAAA&ccb=7-5&ig_cache_key=MzMyMTk1MjYyOTQ0NDg2Mzg0Ng%3D%3D.2-ccb7-5&oh=00_AYBmCZ4erAKzcbdPC2nn6O2XFZx-WfTdKZHZyjpNGVGqrA&oe=66AE301D&_nc_sid=56bdfd",
     },
     {
       id: 6,
@@ -118,56 +122,54 @@ export default function About() {
     setPopUpContent(null);
   };
 
+  const videos = [
+    {
+      videoUrl: "https://www.instagram.com/reel/C59wqZYPATc/embed",
+      title: "Cuplikan Kelfast di Respati CUP",
+    },
+    {
+      videoUrl: "https://www.instagram.com/reel/C1ZShrsvUpG/embed",
+      title: "Cuplikan Seleksi pemain Kelfast U13",
+    },
+    {
+      videoUrl: "https://www.instagram.com/reel/C6fLXdIP9e4/embed",
+      title: "Cuplikan Kelfast on training routine",
+    },
+    {
+      videoUrl: "https://www.instagram.com/reel/C59wqZYPATc/embed",
+      title: "Cuplikan Kelfast di Respati CUP",
+    },
+    {
+      videoUrl: "https://www.instagram.com/reel/C1ZShrsvUpG/embed",
+      title: "Cuplikan Seleksi pemain Kelfast U13",
+    },
+    {
+      videoUrl: "https://www.instagram.com/reel/C6fLXdIP9e4/embed",
+      title: "Cuplikan Kelfast on training routine",
+    },
+  ];
+
   return (
     <div>
-      <header className="bg-blue-dark pt-20">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <div className="text-center sm:text-left">
-              <h1 className="text-2xl font-bold text-white sm:text-3xl">
-                Blog KELFAST FC
-              </h1>
-
-              <p className="mt-1.5 text-sm text-white">
-                Monggo silakan di pesan official merchandise kelfast
-              </p>
-            </div>
-
-            <div className="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-              <button
-                className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-5 py-3 text-gray-500 transition hover:text-gray-700 focus:outline-none focus:ring"
-                type="button"
-              >
-                <span className="text-sm font-medium"> View Website </span>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </button>
-
-              <button
-                className="block rounded-lg bg-white px-5 py-3 text-sm font-medium border-yellow-500 text-blue-dark transition hover:bg-blue-dark  hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
-                type="button"
-              >
-                Shop Now
-              </button>
+      <header className="pt-14">
+        <div className="relative bg-cover bg-center h-[400px] max-sm:h-[150px] bg-[url('/juara2.jpg')] text-white">
+          <div className="absolute inset-0 bg-opacity-50 bg-blue-dark"></div>
+          <div className="relative container mx-auto flex flex-col items-center justify-center h-full">
+            <div className="text-center">
+              <h1 className="text-5xl font-bold">NEWS</h1>
+              <a href="/#" className="mt-4 text-lg">
+                HOME / NEWS
+              </a>
             </div>
           </div>
         </div>
       </header>
 
-      <div className="p-4">
+      <div className="p-4 bg-blue-light">
+        <h1 className="text-4xl font-bold text-center pt-5 text-white mb-8">
+          POST & GALLERY KELFAST FC
+        </h1>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
           {cards.map((card) => (
             <Card
@@ -189,6 +191,15 @@ export default function About() {
           onClose={handleClosePopUp}
         />
       )}
+
+      <div className="bg-blue-dark min-h-auto p-8 flex flex-col items-center">
+        <h1 className="text-4xl font-bold text-white mb-8">VIDEO</h1>
+        <div className="grid grid-cols-3 max-md:grid-cols-1 max-sm:grid-cols-1 justify-center items-center">
+          {videos.map((video, index) => (
+            <VideoCard key={index} {...video} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
