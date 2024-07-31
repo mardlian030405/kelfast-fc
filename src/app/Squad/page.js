@@ -5,61 +5,15 @@ import logo from "/public/logo.png";
 const Squad = () => {
   return (
     <div>
-      <header className="bg-blue-dark pt-20">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <div className="text-center sm:text-left">
-              <h1 className="text-2xl font-bold text-white sm:text-3xl">
-                LINE UP KELFAST FC
-              </h1>
-
-              <p className="mt-1.5 text-sm text-white">
-                Let's write a new blog post! 🎉
-              </p>
-            </div>
-
-            <div className="mt-4 flex flex-col gap-8 sm:mt-0 sm:flex-row sm:items-center">
-              <button
-                className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-5 py-3 text-gray-500 transition hover:text-gray-700 focus:outline-none focus:ring"
-                type="button"
-              >
-                <span className="text-sm font-medium"> View Website </span>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </button>
-              <button
-                className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-5 py-3 text-gray-500 transition hover:text-gray-700 focus:outline-none focus:ring"
-                type="button"
-              >
-                <span className="text-sm font-medium"> Shop now</span>
-
-                <svg
-                  className="h-4 w-4 text-blue-dark hover:text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                  />
-                </svg>
-              </button>
+      <header className="pt-14">
+        <div className="relative bg-cover bg-center h-[400px] max-sm:h-[150px] bg-[url('/juara2.jpg')] text-white">
+          <div className="absolute inset-0 bg-opacity-50 bg-blue-dark"></div>
+          <div className="relative container mx-auto flex flex-col items-center justify-center h-full">
+            <div className="text-center">
+              <h1 className="max-sm:text-2xl text-5xl font-bold">SQUAD</h1>
+              <a href="/#" className="max-sm:text-sm mt-4 text-lg">
+                HOME / SQUAD
+              </a>
             </div>
           </div>
         </div>

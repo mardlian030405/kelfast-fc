@@ -104,7 +104,7 @@ const Page = () => {
       </div>
       <div className=" bg-blue-light min-h-auto p-8 flex flex-col items-center">
         <h1 className="text-4xl text-white font-bold mb-8">Blog Posts</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-3 pt-5 gap-8">
+        <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-lg:grid-cols-3 pt-5 gap-8">
           {blogPosts.map((post, index) => (
             <BlogCard
               key={index}

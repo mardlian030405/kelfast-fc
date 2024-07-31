@@ -42,7 +42,7 @@ const PopUp = ({ title, content, imageUrl, onClose }) => (
             className="rounded-t-lg relative inset-0"
           />
         </div>
-        <p className="mb-4 mx-4 text-justify">{content}</p>
+        <p className="mb-4 mx-4 max-sm:text-sm text-justify">{content}</p>
       </div>
 
       <button
@@ -70,15 +70,15 @@ export default function About() {
       id: 2,
       title: "Seleksi Kelfast U-13",
       content:
-        "oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+        "DICARI 15 Anak Laki-Laki Kelahiran Tahun 2010/2011/2012 Sehat Fisik, Hobi/Bakat Main Bola, Ada Pengalaman Ikut Kompetis Lebih Baik, Menguasai Dasar Permainan Bola Domisili Nganjuk (tidak kejauhan jika latihan di Nganjuk Kota) Komitmen & Rajin Latihan Futsal bersama Kelfast Futsal Club Diberi Izin dan Dukungan oleh Kedua Orang Tua Beberapa Fasilitas Untuk Yang Terpilih / Lolos Seleksi,Biaya Latihan Gratis 2x dalam 1 Minggu,Jersey / Seragam Tim Gratis (Bagi yg kurang mampu diberikan sepatu futsal gratis*), dan Biaya Sparring / Ikut Serta Kompetisi (dalam/Luar kota) Gratis",
       imageUrl:
         "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/410309492_3500007626905139_1186460993421857155_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDI0eDE4MjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=BjHaOtdbWGUQ7kNvgEw4k7j&gid=88ebef6cec6b4108bc607b3db2b2abc0&edm=AGFyKLkBAAAA&ccb=7-5&ig_cache_key=MzI1ODAwNDQ3MzExNjU5MDkzOA%3D%3D.2-ccb7-5&oh=00_AYAWFM4cTWRLu-SQitNKoR5MEo5QdG4xVq5ErYVVAHCgIA&oe=66AE0D19&_nc_sid=5a0a6d",
     },
     {
       id: 3,
-      title: "Post 3",
+      title: "Kelfast U16 meraih juara 3 di Rosalia CUP",
       content:
-        "Siap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+        "Tidak ada yang lebih membanggakan daripada melihat kerja keras dan dedikasi kami akhirnya membuahkan hasil! Kelfast FC berhasil menjuarai Rosalia Futsal Cup, sebuah prestasi yang kami raih berkat semangat, kerjasama, dan determinasi yang tak tergoyahkan. Setiap tetes keringat, setiap strategi yang dirancang dengan cermat, dan setiap dukungan dari para penggemar telah membawa kami ke momen luar biasa ini. Terima kasih yang sebesar-besarnya kepada pelatih, manajemen, para pemain, dan tentu saja para suporter yang selalu setia mendukung kami. Kemenangan ini adalah untuk kalian semua! Mari kita terus berjuang dan menorehkan lebih banyak prestasi di masa depan. #KelfastFC #RosaliaFutsalCup #Champions #TeamWork #Victory",
       imageUrl:
         "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/432492162_924844449354546_3029459472931812545_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDI1NjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=DOULokZAAXEQ7kNvgHtAmLd&gid=88ebef6cec6b4108bc607b3db2b2abc0&edm=AGFyKLkBAAAA&ccb=7-5&ig_cache_key=MzMyMTg0ODUwMjQwODkxNDQ5MQ%3D%3D.2-ccb7-5&oh=00_AYAxdUTJHnenjLe_ziE5YYqWTKceYKCX3zyuzTHtGtOG4Q&oe=66AE05D4&_nc_sid=5a0a6d",
     },
@@ -156,8 +156,8 @@ export default function About() {
           <div className="absolute inset-0 bg-opacity-50 bg-blue-dark"></div>
           <div className="relative container mx-auto flex flex-col items-center justify-center h-full">
             <div className="text-center">
-              <h1 className="text-5xl font-bold">NEWS</h1>
-              <a href="/#" className="mt-4 text-lg">
+              <h1 className="max-sm:text-2xl text-5xl font-bold">NEWS</h1>
+              <a href="/#" className="max-sm:text-sm mt-4 text-lg">
                 HOME / NEWS
               </a>
             </div>
@@ -166,7 +166,7 @@ export default function About() {
       </header>
 
       <div className="p-4 bg-blue-light">
-        <h1 className="text-4xl font-bold text-center pt-5 text-white mb-8">
+        <h1 className="text-4xl max-sm:text-3xl font-extrabold text-center pt-5 text-white mb-8">
           POST & GALLERY KELFAST FC
         </h1>
 
@@ -194,7 +194,7 @@ export default function About() {
 
       <div className="bg-blue-dark min-h-auto p-8 flex flex-col items-center">
         <h1 className="text-4xl font-bold text-white mb-8">VIDEO</h1>
-        <div className="grid grid-cols-3 max-md:grid-cols-1 max-sm:grid-cols-1 justify-center items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center">
           {videos.map((video, index) => (
             <VideoCard key={index} {...video} />
           ))}

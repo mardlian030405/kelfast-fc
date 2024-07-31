@@ -100,60 +100,85 @@ const About = () => {
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <header className="text-center">
             <h2 className="text-xl font-extrabold text-white sm:text-3xl">
-              KELFAST FC
+              TEAM KELFAST FC
             </h2>
-
-            <p className="mx-auto mt-4 max-w-md font-bold text-white">
-              KELFAST FC, KELFAST U23, dan KELFAST U17
-            </p>
           </header>
 
           <ul className="mt-8 grid gap-4 sm:grid-cols-3 lg:grid-cols-3">
-            <article className="group">
-              <Image
-                alt=""
-                src={juara}
-                className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
-              />
+            <li>
+              <a className="group relative block bg-black">
+                <Image
+                  alt=""
+                  src={juara}
+                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
 
-              <div className="bg-white rounded-md mt-4 p-4">
-                <a href="#">
-                  <h3 className="text-lg text-center font-medium text-gray-900">
+                <div className="relative p-4 sm:p-6 lg:p-8">
+                  <p className="text-xl font-bold uppercase tracking-widest text-white">
                     KELFAST U23
-                  </h3>
-                </a>
-              </div>
-            </article>
-            <article className="group">
-              <Image
-                alt=""
-                src={juara}
-                className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
-              />
+                  </p>
 
-              <div className="bg-white rounded-md mt-4 p-4">
-                <a href="#">
-                  <h3 className="text-lg text-center font-medium text-gray-900">
-                    KELFAST U19
-                  </h3>
-                </a>
-              </div>
-            </article>
-            <article className="group">
-              <Image
-                alt=""
-                src={juara}
-                className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
-              />
+                  <div className="mt-32 sm:mt-48 lg:mt-64">
+                    <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                      <p className="lg:text-sm text-white sm:text-sm">
+                        RESPATI CUP 2nd
+                      </p>
+                      <p className="lg:text-sm text-white sm:text-sm">
+                        HEATLESS CUP 3rd
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
 
-              <div className="bg-white rounded-md mt-4 p-4">
-                <a href="#">
-                  <h3 className="text-lg text-center font-medium text-gray-900">
-                    KELFAST U17
-                  </h3>
-                </a>
-              </div>
-            </article>
+            <li>
+              <a className="group relative block bg-black">
+                <Image
+                  alt=""
+                  src={juara}
+                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+
+                <div className="relative p-4 sm:p-6 lg:p-8">
+                  <p className="text-xl font-bold uppercase tracking-widest text-white">
+                    KELFAST U-19
+                  </p>
+
+                  <div className="mt-32 sm:mt-48 lg:mt-64">
+                    <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                      <p className="lg:text-3xl text-white sm:text-xl">
+                        ROSALIA CUP 3rd
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a className="group relative block bg-black">
+                <Image
+                  alt=""
+                  src={juara}
+                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+
+                <div className="relative p-4 sm:p-6 lg:p-8">
+                  <p className="text-xl font-bold uppercase tracking-widest text-white">
+                    KELFAST U-16
+                  </p>
+
+                  <div className="mt-32 sm:mt-48 lg:mt-64">
+                    <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                      <p className="text-xl font-bold text-white sm:text-2xl">
+                        Player name
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
