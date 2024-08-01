@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import juara from "/public/juara.png";
-import juara2 from "/public/juara2.jpg";
-import juara3 from "/public/juara3.jpg";
+import juara2 from "/public/respati.jpg";
+import juara3 from "/public/heatless.jpg";
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

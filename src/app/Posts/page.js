@@ -33,7 +33,7 @@ const PopUp = ({ title, content, imageUrl, onClose }) => (
     <div className="bg-white p-6 rounded-lg shadow-lg text-center ">
       <h2 className="text-xl ml-4 font-bold text-start mb-4">{title}</h2>
       <div className="flex flex-col md:flex-row">
-        <div className="relative md:w-10/12 md:h-96 w-96 h-64 mb-4">
+        <div className="max-w-full relative w-full h-64 mb-4">
           <Image
             src={imageUrl}
             alt={title}
@@ -42,7 +42,7 @@ const PopUp = ({ title, content, imageUrl, onClose }) => (
             className="rounded-t-lg relative inset-0"
           />
         </div>
-        <p className="mb-4 mx-4 max-sm:text-sm text-justify">{content}</p>
+        <p className="mb-4 mx-10 max-sm:text-sm text-justify">{content}</p>
       </div>
 
       <button
@@ -61,10 +61,10 @@ export default function About() {
   const cards = [
     {
       id: 1,
-      title: "Coaching clinic kelfast fc",
+      title: "KELFAST meraih juara 2 di gelaran RESPATI CUP di kota madiun",
       content:
-        "Coaching clinic oleh dean gustian kelfast fc untuk meningkatkan kualitas permainan saat mengarungi tournament futsal yang akan datang serta mendapatkan motivasi oleh coach dean",
-      imageUrl: "/blog1.jpg",
+        "Pada tanggal yang tak terlupakan, Kelfast FC berhasil meraih juara kedua dalam turnamen bergengsi, Respati Cup, yang diadakan di Kota Madiun. Dalam kompetisi yang diikuti oleh berbagai tim tangguh, Kelfast FC menunjukkan semangat juang yang luar biasa dan keterampilan yang memukau di setiap pertandingan. Perjalanan mereka menuju podium tidaklah mudah; setiap laga dipenuhi dengan tantangan dan rintangan yang menguji kekuatan mental serta kemampuan teknis tim. Di babak penyisihan, Kelfast FC tampil impresif dengan strategi yang solid dan kerja sama tim yang mengagumkan. Mereka berhasil mengalahkan lawan-lawan mereka dengan skor yang meyakinkan, menunjukkan bahwa mereka adalah salah satu kandidat kuat untuk meraih gelar juara. Semangat pantang menyerah dan tekad yang kuat menjadi senjata utama Kelfast FC dalam menghadapi tekanan dan persaingan yang ketat.",
+      imageUrl: "/respati.jpg",
     },
     {
       id: 2,
@@ -84,32 +84,32 @@ export default function About() {
     },
     {
       id: 4,
-      title: "Post 2",
+      title: "KELFAST meraih juara 3 di gelaran HEATLESS CUP",
       content:
-        "oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+        "Perjalanan Kelfast FC di Heatless Cup dimulai dengan babak penyisihan yang menantang. Mereka harus menghadapi tim-tim kuat dengan berbagai strategi dan taktik yang berbeda. Namun, dengan persiapan yang matang dan kerja sama tim yang solid, Kelfast FC mampu menunjukkan performa terbaik mereka di setiap pertandingan. Kemenangan demi kemenangan diraih, membawa mereka semakin dekat ke puncak prestasi.",
       imageUrl:
         "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/432540512_1995621987506722_7805268495414454534_n.jpg?stp=dst-jpg_e35_p480x480&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDI1NjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=LBJjYzV1UkAQ7kNvgF7nnTP&gid=88ebef6cec6b4108bc607b3db2b2abc0&edm=AGFyKLkBAAAA&ccb=7-5&ig_cache_key=MzMyMTg2NzM3OTgyMTgyMzQ5OQ%3D%3D.2-ccb7-5&oh=00_AYATfj9cFxSRp_A4Vdzq3S49iqaSAoZgKf-LwbKfq5bDCA&oe=66AE174B&_nc_sid=5a0a6d",
     },
     {
       id: 5,
-      title: "Post 3",
+      title: "Coaching clinic kelfast fc",
       content:
-        "Siap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
-      imageUrl:
-        "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/432438225_908306984355984_1298487451995429155_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDI1NjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=YqWUg8bKMaQQ7kNvgFDZ7Qy&edm=ADDLYBMBAAAA&ccb=7-5&ig_cache_key=MzMyMTk1MjYyOTQ0NDg2Mzg0Ng%3D%3D.2-ccb7-5&oh=00_AYBmCZ4erAKzcbdPC2nn6O2XFZx-WfTdKZHZyjpNGVGqrA&oe=66AE301D&_nc_sid=56bdfd",
+        "Coach Dean memulai sesi dengan memberikan pengenalan tentang pentingnya dasar-dasar futsal yang solid. Peserta diajak untuk memahami teknik dasar seperti passing, dribbling, shooting, dan kontrol bola. Melalui demonstrasi langsung dan latihan praktis, para peserta dapat merasakan peningkatan keterampilan mereka secara signifikan.Coaching Clinic ini menjadi pengalaman yang sangat berharga bagi semua peserta. Mereka tidak hanya mendapatkan ilmu dan keterampilan baru, tetapi juga termotivasi untuk terus berkembang dan mencapai prestasi yang lebih tinggi. Terima kasih kepada Coach Dean yang telah berbagi pengetahuan dan pengalaman berharga, serta kepada semua peserta yang telah berpartisipasi dengan antusias.",
+      imageUrl: "/blog1.jpg",
     },
     {
       id: 6,
-      title: "Post 2",
+      title: "KELFAST menlakoni uji tanding dengan SMA Budi Utomo Jombang",
       content:
-        "oke diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+        "Dalam rangka meningkatkan skill dan pengalaman bermain, Kelfast FC baru saja melakoni uji tanding futsal yang seru dan penuh tantangan melawan tim futsal dari SMA Budi Utomo Jombang. Pertandingan ini berlangsung dalam suasana yang penuh semangat dan sportivitas tinggi, menjadi ajang untuk saling menguji kekuatan dan strategi masing-masing tim.",
       imageUrl: "/juara2.jpg",
     },
     {
       id: 7,
-      title: "Post 3",
+      title:
+        "KELFAST melakukan fourfeo dengan tim internal kelfast dari segala umur",
       content:
-        "Siap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras Setiap diri yang percaya bahwa keberhasilan adalah titik pertemuan antara kesiapan dan kesempatan akan selalu berusaha keras anjayyyyyy",
+        "Dalam rangka meningkatkan skill dan pengalaman bermain, Kelfast FC baru saja melakoni uji tanding futsal yang seru dan penuh tantangan melawan tim futsal dari SMA Budi Utomo Jombang. Pertandingan ini berlangsung dalam suasana yang penuh semangat dan sportivitas tinggi, menjadi ajang untuk saling menguji kekuatan dan strategi masing-masing tim.",
       imageUrl: "/juara3.jpg",
     },
   ];
@@ -170,7 +170,7 @@ export default function About() {
           POST & GALLERY KELFAST FC
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-5">
           {cards.map((card) => (
             <Card
               key={card.id}

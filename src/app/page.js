@@ -25,23 +25,16 @@ const videos = [
 
 const blogPosts = [
   {
-    title: "My First Blog Post",
-    description: "This is the description for my first blog post.",
-    imageUrl: "/juara2.jpg",
-    date: "July 23, 2024",
+    title: "KELFAST meraih juara 2 di gelaran RESPATI CUP di kota madiun",
+    imageUrl: "/respati.jpg",
   },
   {
-    title: "Another Blog Post",
-    description: "This is the description for another blog post.",
-    imageUrl:
-      "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.29350-15/410309492_3500007626905139_1186460993421857155_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDI0eDE4MjAuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=nrLL8aYPjisQ7kNvgHcUckw&edm=AGFyKLkBAAAA&ccb=7-5&ig_cache_key=MzI1ODAwNDQ3MzExNjU5MDkzOA%3D%3D.2-ccb7-5&oh=00_AYCutHShhuPoU5FdtU8XpytKTmA7cqRJtClKs8ozM0u_ZA&oe=66A50AD9&_nc_sid=5a0a6d",
-    date: "July 22, 2024",
+    title: "KELFAST berhasil mengamankan juara 3 di heatless cup",
+    imageUrl: "/heatless.jpg",
   },
   {
-    title: "Another Blog Post",
-    description: "This is the description for another blog post.",
-    imageUrl: "/juara3.jpg",
-    date: "July 22, 2024",
+    title: "KELFAST berhasil mengamankan juara 3 di heatless cup",
+    imageUrl: "/heatless.jpg",
   },
 ];
 
