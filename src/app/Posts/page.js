@@ -42,7 +42,7 @@ const PopUp = ({ title, content, imageUrl, onClose }) => (
             className="rounded-t-lg relative inset-0"
           />
         </div>
-        <p className="mb-4 mx-10 max-sm:text-sm text-justify">{content}</p>
+        <p className="mb-4 mx-2 max-sm:text-sm text-justify">{content}</p>
       </div>
 
       <button
