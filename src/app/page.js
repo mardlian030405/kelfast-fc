@@ -1,3 +1,4 @@
+"use client";
 import ImageSlider from "@/components/ImageSlider";
 import JuaraSlider from "@/components/JuaraSlider";
 import VideoCard from "../components/VideoCard";
@@ -38,7 +39,7 @@ const blogPosts = [
   },
 ];
 
-const Page = () => {
+export default function page() {
   return (
     <div>
       <ImageSlider />
@@ -152,5 +153,4 @@ const Page = () => {
       </section>
     </div>
   );
-};
-export default Page;
+}

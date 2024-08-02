@@ -29,9 +29,11 @@ const Card = ({ title, content, imageUrl, onClick }) => (
 );
 
 const PopUp = ({ title, content, imageUrl, onClose }) => (
-  <div className="fixed top-0 mx-10 inset-0 flex items-center justify-center z-50">
+  <div className="fixed top-0 mx-10 max-sm:mx-2 inset-0 flex items-center justify-center z-50">
     <div className="bg-white p-6 rounded-lg shadow-lg text-center ">
-      <h2 className="text-xl ml-4 font-bold text-start mb-4">{title}</h2>
+      <h2 className="text-xl ml-4 max-sm:text-sm font-bold text-start mb-4">
+        {title}
+      </h2>
       <div className="flex flex-col md:flex-row">
         <div className="max-w-full relative w-full h-64 mb-4">
           <Image
@@ -42,7 +44,7 @@ const PopUp = ({ title, content, imageUrl, onClose }) => (
             className="rounded-t-lg relative inset-0"
           />
         </div>
-        <p className="mb-4 mx-2 max-sm:text-sm text-justify">{content}</p>
+        <p className="mb-4 mx-2 max-sm:text-xs text-justify">{content}</p>
       </div>
 
       <button
